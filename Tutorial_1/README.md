@@ -10,7 +10,7 @@ Adapted from the ["Parametrization of a new small molecule"](https://cgmartini.n
 
 ### Summary
 - [`Introduction`](#introduction)
-- [`Strategy 1: Generate models manually`](Strategy 1: Generate models manually)
+- [`Strategy 1: Generate models manually`](#Strategy-1:-Generate-models-manually)
   - [`Atom-to-bead mapping`](#atom-to-bead-mapping)
   - [`Generate the CG mapped trajectory from the atomistic simulation`](#generate-the-cg-mapped-trajectory-from-the-atomistic-simulation)
   - [`Create the initial CG itp and tpr files`](#create-the-initial-cg-itp-and-tpr-files)
