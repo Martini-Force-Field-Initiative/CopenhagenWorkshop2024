@@ -10,7 +10,7 @@ Adapted from the ["Parametrization of a new small molecule"](https://cgmartini.n
 
 ### Summary
 - [`Introduction`](#introduction)
-- [`Strategy 1: Generate models manually`](#generate-atomistic-reference-data)
+- [`Strategy 1: Generate models manually`](Strategy 1: Generate models manually)
   - [`Atom-to-bead mapping`](#atom-to-bead-mapping)
   - [`Generate the CG mapped trajectory from the atomistic simulation`](#generate-the-cg-mapped-trajectory-from-the-atomistic-simulation)
   - [`Create the initial CG itp and tpr files`](#create-the-initial-cg-itp-and-tpr-files)
@@ -39,7 +39,7 @@ We will use as an example the molecule *1-ethylnaphthalene* (Fig. 1), and make u
 
 ![Figure 1 | 1-ethylnaphthalene.](fig1.png)
 
-### 1. Strategy 1: Generate models manually
+### Strategy 1: Generate models manually
 <hr>
 
 We will need atomistic reference data to extract bonded parameters for the CG model. Note that we will need all the hydrogen atoms to extract bond lengths further down this tutorial, so make sure that your atomistic structure contains all the hydrogens.
