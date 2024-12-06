@@ -303,7 +303,7 @@ You now have a topology for a custom lipid, implemented in a way to be flexibly 
 <hr>
 
  - `GROMACS` ([http://www.gromacs.org/](http://www.gromacs.org/))
- - `insane.py` (downloadable [here](../../../downloads/tools/proteins-and-bilayers.qmd#insane))
+ - `insane.py` (downloadable [here](https://github.com/Tsjerk/Insane))
  - `MDAnalysis` ([https://www.mdanalysis.org](http://www.mdanalysis.org/))
 
 ### References
