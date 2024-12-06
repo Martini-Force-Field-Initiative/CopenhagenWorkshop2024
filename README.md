@@ -1,4 +1,4 @@
-# CopenhagenWorkshop2024
+# Advances in Molecular Modelling Workshop 2024
 
 ### Mastering Parametrization in Martini 3: Tips and Tricks for Small Molecules and Lipids
 
