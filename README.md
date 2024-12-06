@@ -1,6 +1,6 @@
 # Advances in Molecular Modelling Workshop 2024
 
-### Mastering Parametrization in Martini 3: Tips and Tricks for Small Molecules and Lipids
+## Mastering Parametrization in Martini 3: Tips and Tricks for Small Molecules and Lipids
 
 This repository contains two tutorials designed for the **Advances in Molecular Modeling Workshop** hosted at the Niels Bohr Institute, University of Copenhagen. 
 These sessions will be held on:
