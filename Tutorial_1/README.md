@@ -11,7 +11,7 @@ Adapted from the ["Parametrization of a new small molecule"](https://cgmartini.n
 ### Summary
 - [`Introduction`](#introduction)
 - [`Strategy 1: Generate models manually`](#generate-atomistic-reference-data)
-  - [`Atom-to-bead mapping`](#atom-to-bead-mapping)
+  - [`Atom-to-bead mapping`](#2.-atom-to-bead-mapping)
   - [`Generate the CG mapped trajectory from the atomistic simulation`](#generate-the-cg-mapped-trajectory-from-the-atomistic-simulation)
   - [`Create the initial CG itp and tpr files`](#create-the-initial-cg-itp-and-tpr-files)
   - [`Generate target CG distributions from the CG mapped trajectory`](#generate-target-cg-distributions-from-the-cg-mapped-trajectory)
