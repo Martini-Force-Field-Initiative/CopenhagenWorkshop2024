@@ -88,8 +88,8 @@ Mapping, *i.e.*, splitting the molecule in building blocks to be described by CG
 * only non-hydrogen atoms are considered to define the mapping;
 * avoid dividing specific chemical groups (*e.g.*, amide or carboxylate) between two beads;
 * respect the symmetry of the molecule; it is moreover desirable to retain as much as possible the volume and shape of the underlying AA structure;
-* default option for 4-to-1, 3-to-1 and 2-to-1 mappings are regular (R), small (S), and tiny (T) beads; they are the default option for linear fragments, *e.g.*, the two 4-to-1 segments in octane;
-* R-beads are the best option in terms of computational performance, with the bead size reasonably good to represent 4-to-1 linear molecules;
+* default option for 4-to-1, 3-to-1 and 2-to-1 mappings are regular (R), small (S), and tiny (T) beads;
+* R-beads are the best option in terms of computational performance, with the bead size reasonably good to represent 4-to-1 linear molecules; They are the default option for long linear fragments, e.g., the three 4-to-1 segments in dodecane;
 * T-beads are especially suited to represent the flatness of aromatic rings;
 * S-beads usually better mimic the "bulkier" shape of aliphatic rings;
 * the number of beads should be optimized such that the maximum mismatch in mapping is ±1 non-hydrogen atom per 10 non-hydrogen atoms of the atomistic structure;
@@ -230,8 +230,8 @@ Bonds are defined under `[ bonds ]` by stating the atom number of the particles 
 
 ``` bash
 [bonds]
-; i j funct length  
-  1 2   1    0.260  
+; i j funct length force_k
+1 2  1   0.260      5000
 ...
 
 [constraints]
@@ -461,9 +461,9 @@ The SASA distributions show a discrepancy of about 5% (the average CG SASA is ab
 #### 8.3 Final considerations
 <hr>
 
-* Mapping of some chemical groups, especially when done at higher resolutions (*e.g.*, in aromatic rings), can vary based on the proximity of functional groups. The rule of thumb is that such perturbations may require a shift of ±1 in the degree of polarity of the bead in question.
+* Bead assignment of some chemical groups, especially when done at higher resolutions (*e.g.*, in aromatic rings), can vary based on the proximity of functional groups. The rule of thumb is that such perturbations may require a shift of ±1 in the degree of polarity of the bead in question.
 
-* Take inspiration from already-developed models when trying to build a Martini 3 molecule for a new small molecule. Several examples can be found on the [Martini 3 small molecule GitHub repo](https://github.com/ricalessandri/Martini3-small-molecules/blob/main/models/martini_v3.0.0_small_molecules_v1.itp).
+* Take inspiration from already-developed models when trying to build a Martini 3 molecule for a new small molecule. Several examples can be found on the [Martini 3 small molecule GitHub repo](https://github.com/ricalessandri/Martini3-small-molecules/blob/main/models/martini_v3.0.0_small_molecules_v1.itp) and MAD [MAD website](https://mad.ibcp.fr/explore).
 
 Besides hydrogen bonding labels ("d" for donor, and "a" for acceptor), electron polarizability labels are also made available in Martini 3: these mimic electron-rich (label "e") or electron-poor (label "v", for "vacancy") regions of aromatic rings. Such labels have been tested to a less extended degree than "d"/"a" labels, but have shown great potentials in applications involving aedamers <sup>[[1]](#references)</sup>. In the case of 1-ethylnaphthalene, the "e" label may be used to describe bead number 4 (at the center of the naphthalene moiety) and bead number 1 (because connected to an electron-donating group such as -CH2CH3).
 
